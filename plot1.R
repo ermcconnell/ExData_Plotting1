@@ -10,6 +10,6 @@ data$Time<-strptime(data$Time,"%H:%M:%S")
 dataSm<-subset(data,Date=="2007-02-01" | Date=="2007-02-02")
 
 #Initiate the PNG file I want to plot to
-png(filename="C:/Users/EMcConnell/Documents/GitHub/ExData_Plotting1/plot1.png". width=480, height=480)
+png(filename="C:/Users/EMcConnell/Documents/GitHub/ExData_Plotting1/plot1.png", width=480, height=480)
 hist(dataSm$Global_active_power, col="red", main="Global Active Power",xlab="Global Active Power (kilowatts)")
 dev.off()
